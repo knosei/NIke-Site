@@ -1,0 +1,13 @@
+import React from 'react'
+
+const Button = ({ label, iconUrl }) => {
+  return (
+    <button>
+        {label}
+        <img src={iconURL} alt="arrow icon" 
+        className='ml-2 rounded-full w-5 h-5'/>
+    </button>
+  )
+}
+
+export default Button
