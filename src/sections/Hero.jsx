@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons'
 import { statistics } from '../constants';
+import { bigShoe1 } from '../assets/images';
 
 const Hero = () => {
   return (
@@ -26,11 +27,16 @@ const Hero = () => {
         gap-16'>
           {statistics.map((stat) => (
             <div key={stat.label}>
-              <p>{stat.value}</p>
-              <p>{stat.label}</p>
+              <p className='text-4xl font-palanquin font-bold'>{stat.value}</p>
+              <p className='leading-7 font-montserrat text-slate-gray'>{stat.label}</p>
             </div>
           ))}
         </div>
+      </div>
+
+      <div>
+        <img src={bigShoe1} alt="shoe collection" width={610} height={500} 
+        className='object-contain relative z-10'/>
       </div>
     </section>
   )
