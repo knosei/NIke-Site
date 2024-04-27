@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../components/Button';
 import { arrowRight } from '../assets/icons'
-import { statistics } from '../constants';
+import { shoes, statistics } from '../constants';
 import { bigShoe1 } from '../assets/images';
 import ShoeCard from '../components/ShoeCard';
 
@@ -41,11 +41,11 @@ const Hero = () => {
         className='object-contain relative z-10'/>
 
         <div>
-          {/* {shoes.map((shoe) => (
+          {shoes.map((shoe) => (
             <div key={shoe}>
               <ShoeCard imgUrl={shoe} changeBigShoeImage={() => {}} bigShoeImg="" />
             </div> 
-          ))} */}
+          ))}
         </div>
       </div>
     </section>
